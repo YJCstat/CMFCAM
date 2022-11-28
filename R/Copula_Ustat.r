@@ -2,7 +2,6 @@
 #' Estimating the direct and indirect of the Copula model by U-statistics
 #' @import Copula.surv
 #' @import survival
-#' @import BSDA
 #' @param data data.frame(X1,X2,D,Z)
 #' @param interpolation time can be vector or scalar
 #' @param int_theta initial value of theta for iteration, nonnegative values vector of length 2
