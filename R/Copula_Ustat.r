@@ -13,7 +13,7 @@
 #' @export
 #' @examples data=meta.gen(500,theta_0=0.5,theta_1=0.5,L1=0.5,L2=0.5,L3=1,b01=1,b02=0,b03=0,cc=2,dd="uniform")
 #' @examples P.time=seq(0,1,by=0.01)
-#' @examples ans=Copula.DEIE(data,P.time)
+#' @examples ans=CP_U(data,P.time)
 #' @examples plot(P.time,ans$DE,type="l",ylim=c(-0.5,0.5))
 #' @examples points(P.time,ans$DE+ans$DE_sd,type="l",ylim=c(-0.5,0.5))
 #' @examples points(P.time,ans$DE-ans$DE_sd,type="l",ylim=c(-0.5,0.5))
