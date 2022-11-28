@@ -1,12 +1,8 @@
 #' Estimating the direct and indirect of the Copula model by MLE
 #' @import Copula.surv
 #' @param data data.frame(X1,X2,D,Z)
-#' @param interpolation time can be vector or scalar
-#' @param int_theta initial value of theta for iteration, nonnegative values vector of length 2
-#' @param int_theta initial value of theta for iteration, nonnegative values vector of length 2
-#' @param tol maximum tolerance of change during the iteration
-#' @param step maximum  number of the iteration
-#' @keywords causal inference, semicompeting risks, frailty model
+#' @param P.time interpolation time can be vector or scalar
+#' @keywords causal inference, semicompeting risks, Copula model
 #' @export
 #' @examples data=meta.gen(500,theta_0=0.5,theta_1=0.5,L1=0.5,L2=0.5,L3=1,b01=1,b02=0,b03=0,cc=2,dd="uniform")
 #' @examples P.time=seq(0,1,by=0.01)
