@@ -39,8 +39,8 @@ if(length(int_theta)!=0){
 TH0=int_theta[1]
 TH1=int_theta[2]
 }
-Xu_0=Xu2010(x.obs_0,y.obs_0,dy_0,TH0,TOL,step,FIG="FALSE")
-Xu_1=Xu2010(x.obs_1,y.obs_1,dy_1,TH1,TOL,step,FIG="FALSE")
+Xu_0=Xu2010(x.obs_0,y.obs_0,dy_0,TH0,TOL,step)
+Xu_1=Xu2010(x.obs_1,y.obs_1,dy_1,TH1,TOL,step)
 
 theta_z1=Xu_1$theta
 theta_z0=Xu_0$theta
