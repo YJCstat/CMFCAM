@@ -1,6 +1,8 @@
 
 #' Estimating the direct and indirect of the Copula model by U-statistics
 #' @import Copula.surv
+#' @import survival
+#' @import BSDA
 #' @param data data.frame(X1,X2,D,Z)
 #' @param interpolation time can be vector or scalar
 #' @param int_theta initial value of theta for iteration, nonnegative values vector of length 2
@@ -48,21 +50,13 @@ z.obs_1=z.obs[Z==1]
 dz_0=dz[Z==0]
 dz_1=dz[Z==1]
 ###################################################################
-
 theta_0=U2.Clayton(x.obs_0,y.obs_0,dx_0,dy_0)
-
-
 theta_1=U2.Clayton(x.obs_1,y.obs_1,dx_1,dy_1)
-
-
 ###################################################################
-
-
 Sz0=survfit(Surv(z.obs_0,dz_0) ~ 1, conf.type = "log-log")
 Sz1=survfit(Surv(z.obs_1,dz_1) ~ 1, conf.type = "log-log")
 Sy0=survfit(Surv(y.obs_0,dy_0) ~ 1, conf.type = "log-log")
 Sy1=survfit(Surv(y.obs_1,dy_1) ~ 1, conf.type = "log-log")
-
 #########################
 P.time=as.matrix(P.time)
 
@@ -159,9 +153,7 @@ dLac2*RP
 
 CountLA=function(za,zb){
 W1tz(zb)*lambda_1(za)+(1-W1tz(zb))*lambda_0(za)
-#W1tz(1)
-#lambda_1(1)
-#lambda_0(1)
+
 }
 
 DE=cumsum(CountLA(1,0)-CountLA(0,0))
@@ -180,3 +172,5 @@ theta=c(theta_0[1],theta_1[1])
  
 return(Report)
 }
+
+
