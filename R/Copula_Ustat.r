@@ -29,7 +29,6 @@ Z=data$S
 Z[data$S==typeS[1]]=0
 Z[data$S==typeS[2]]=1
 
-
 x.obs_0=data$X1[Z==0]
 y.obs_0=data$X2[Z==0]
 dy_0=data$D[Z==0]
