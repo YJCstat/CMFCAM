@@ -171,4 +171,3 @@ theta=c(theta_0[1],theta_1[1])
 return(Report)
 }
 
-
