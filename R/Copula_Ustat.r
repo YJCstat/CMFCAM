@@ -23,7 +23,7 @@
 #' @examples legend(0,0.45,c("direct effect","indirect effect"),col=1:2,lty=1)
 
 
-Copula.DEIE=function(data,P.time){
+CP_U=function(data,P.time){
 typeS=names(table(data$S))
 Z=data$S
 
