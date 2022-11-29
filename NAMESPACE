@@ -3,6 +3,7 @@
 export(CP_MLE)
 export(CP_Ustat)
 export(Frailty)
+export(M_state)
 export(Xu2010)
 export(Xu2010_rest)
 export(cp_u)
