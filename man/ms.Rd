@@ -15,9 +15,6 @@ ms(data, P.time)
 Estimating the direct and indirect of the Multistate model.
 }
 \examples{
-#This function needs additonal packages "mstate"
-#install.packages("mstate")
-library(mstate)
 data=meta.gen(500,theta_0=0.5,theta_1=0.5,L1=0.5,L2=0.5,L3=1,b01=1,b02=0,b03=0,cc=2,dd="uniform")
 P.time=seq(0,1,by=0.01)
 ans=ms(data,P.time)
