@@ -4,9 +4,9 @@ Version: 1.0
 Authors@R: 
     person("Jih-Chang", "Yu", , "h93h96@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
+Maintainer: Jih-Chang Yu <h93h96@hotmail.com>
 Description: The packages for 'Unified semicompeting risks analysis of hepatitis natural history through mediation modeling'. The main functions are CP_MLE (calculate the causal effect from copula model by MLE), CP_Ustat (calculate the causal effect from copula model by U-statistics), Frailty (calculate the causal effect from frailty model) and M_state (calculate the causal effect from multistate model).
 License: MIT
-Imports: survival, Copula.surv, BSDA,mstate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.2
