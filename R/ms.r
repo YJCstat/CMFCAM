@@ -3,6 +3,7 @@
 #' @import Copula.surv
 #' @import survival
 #' @import BSDA
+#' @import mstate
 #' @param data data.frame(X1,X2,D,Z)
 #' @param P.time interpolation time can be vector or scalar
 #' @keywords causal inference, semicompeting risks, frailty model
